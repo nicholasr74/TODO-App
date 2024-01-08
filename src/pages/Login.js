@@ -9,7 +9,7 @@ import { useState } from 'react';
 function Login(){
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
-    const [accessToken, setAccesToken] = useState("");
+    const [accessToken, setAccessToken] = useState("");
 
     const handleUsernameChange = (e) => {
         setUsername(e.target.value);
@@ -18,6 +18,8 @@ function Login(){
     const handlePasswordChange = (e) => {
         setPassword(e.target.value);    
     };
+
+    
 
     const handleLogin = async (e) => {
         e.preventDefault();
@@ -42,9 +44,10 @@ function Login(){
                 throw new Error("Invalid Credentials");
             }
             
-
-            const result = await response.json();
-            console.log(result);
+            const accToken = await response.json();
+            console.log(accToken.access_token);
+            setAccessToken(accToken.access_token);
+            
             
         }catch (error){
             
