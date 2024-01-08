@@ -1,17 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-import Login from './pages/Login.js';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+import Login from './pages/Login.js';
+import Signup from './pages/Signup.js';
+import Todo from './pages/Todo.js';
 
 
 function App() {
   return (
-    <div className="App">
-      <div className = "min-h-screen bg-gray-400 p-10 flex items-center justify-center">
-
-        <Login/>
-      </div>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Todo/>}/>
+        <Route path="/login" element={<Login/>}/> 
+        <Route path="/signup" element={<Signup/>}/> 
+      </Routes>
+    </Router>
   );
 }
 
