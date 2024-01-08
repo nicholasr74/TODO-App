@@ -8,7 +8,8 @@ function LoginPage(){
 
     return(
         <>
-            <div className = "flex flex-1 p-5 bg-blue-400 items-center justify-center text-white">
+        <div className = "h-screen bg-gray-200">
+            <div className = "flex flex-1 p-5 bg-blue-400 items-center justify-center text-white drop-shadow-md">
                 <p className = "flex flex-1 justify-center text-4xl">Login</p>    
                 
                 <NavLink to = "/signup" as = "button" className = "flex flex-10 bg-blue  rounded text-l">
@@ -16,6 +17,7 @@ function LoginPage(){
                 </NavLink> 
                 </div>
             <Login/>
+            </div>
         </>
     )
 }

@@ -10,6 +10,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: gainsboro;
 }
 
 code {
@@ -18,14 +19,3 @@ code {
 }
 
 
-input{
-  /* className="border-b border-gray-500 focus:border-indigo-500 focus:outline-none" */
-  border-bottom: solid black 1px; 
-
-}
-
-label{
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
