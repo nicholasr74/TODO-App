@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Login from './pages/Login.js';
+import LoginPage from './pages/LoginPage.js';
 import Signup from './pages/Signup.js';
 import Todo from './pages/Todo.js';
 
@@ -10,7 +10,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Todo/>}/>
-        <Route path="/login" element={<Login/>}/> 
+        <Route path="/login" element={<LoginPage/>}/> 
         <Route path="/signup" element={<Signup/>}/> 
       </Routes>
     </Router>

@@ -16,3 +16,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+input{
+  /* className="border-b border-gray-500 focus:border-indigo-500 focus:outline-none" */
+  border-bottom: solid black 1px; 
+
+}
+
+label{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}

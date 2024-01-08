@@ -1,5 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import './Login.css'
+// import ReactDOM from 'react-dom/client';
+
 
 
 
@@ -7,18 +9,23 @@ function Login(){
 
     return(
         <>
-            <div className = "bg-white rounded-lg drop-shadow-xl p-8">
-                <form className = "flex flex-col items-start">
-                    <label className = "flex flex-col items-start">
-                        Username
+       
+            <div className = "container m-auto bg-white rounded-lg drop-shadow-xl p-8 size-50">
+                <form className = "flex flex-col items-start ">
+                    <label>
                     <input
                     type = "text"
+                    className = "focus: outline-none"
                     placeholder='Username'
                     ></input>
                     </label>
                     <label>
-                        Password
-                        <input></input>
+                     
+                        <input
+                            type = "text"
+                            className = "focus: outline-none"
+                            placeholder='Password'
+                        ></input>
                     </label>
                 </form>
 
