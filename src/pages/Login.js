@@ -47,14 +47,12 @@ function Login(){
             const accToken = await response.json();
             console.log(accToken.access_token);
             setAccessToken(accToken.access_token);
-            
+
             
         }catch (error){
             
             console.error("Error making POST request: ", error); 
-            
         }
-
         };
 
 
