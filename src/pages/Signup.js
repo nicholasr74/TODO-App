@@ -62,7 +62,7 @@ function Signup(){
                 setError(true);
             }
             else{
-                navigate('/login');
+                navigate('/');
             }
 
         }catch (error){
