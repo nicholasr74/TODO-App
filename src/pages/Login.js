@@ -6,10 +6,11 @@ import { useState } from 'react';
 
 
 
-function Login(){
+function Login({signup}){
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [accessToken, setAccessToken] = useState("");
+    const {signupStatus} = signup.state || {};
 
     const handleUsernameChange = (e) => {
         setUsername(e.target.value);
