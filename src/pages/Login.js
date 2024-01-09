@@ -47,7 +47,9 @@ function Login(){
             const accToken = await response.json();
             console.log(accToken.access_token);
             setAccessToken(accToken.access_token);
-            
+            // Save access token to localStorage
+            localStorage.setItem('accessToken', accToken.access_token);
+            window.location.href = "/todo";
             
         }catch (error){
             
