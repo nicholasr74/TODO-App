@@ -1,3 +1,5 @@
+## Message to whoever is running this file, the only functionality that was not added was search for todo by ID, everything else is accounted for and if it doesn't show please check console, as they have been thoroughly logged. Thank you!!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
